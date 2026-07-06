@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light;
+
+  --color-bg: #FAF8F4;
+  --color-ink: #2E2C34;
+  --color-ink-soft: #6F6B78;
+  --color-card: #FFFFFF;
+
+  --color-lavender: #B7ACD9;
+  --color-lavender-soft: #E6E1F3;
+  --color-lavender-dark: #9A8CC4;
+  --color-mint: #A7CFC2;
+  --color-navy: #7C89B3;
+
+  --color-border: rgba(46, 44, 52, 0.07);
+  --color-skeleton: rgba(46, 44, 52, 0.07);
+
+  --radius-card: 26px;
+  --radius-pill: 999px;
+  --radius-control: 16px;
+
+  --shadow-soft: 0 8px 30px -14px rgba(46, 44, 52, 0.16);
+
+  --font-serif: "Gowun Batang", serif;
+  --font-sans: "Noto Sans KR", -apple-system, sans-serif;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #1B1A22;
+  --color-ink: #EDEAF2;
+  --color-ink-soft: #A6A2B3;
+  --color-card: #242230;
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-skeleton: rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 8px 30px -14px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #1B1A22;
+    --color-ink: #EDEAF2;
+    --color-ink-soft: #A6A2B3;
+    --color-card: #242230;
+    --color-border: rgba(255, 255, 255, 0.07);
+    --color-skeleton: rgba(255, 255, 255, 0.08);
+    --shadow-soft: 0 8px 30px -14px rgba(0, 0, 0, 0.5);
+  }
+}
